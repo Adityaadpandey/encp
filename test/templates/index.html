@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form  >
+      <input type="text" id="myInput" />
+      <button type="submit" onclick="getInputValue();"">submit</button>
+    </form>
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            
+            // Displaying the value
+            //localStorage.setItem("myInput", inputVal);
+            // console.log(inputVal);
+            //alert(inputVal);
+            ("form").submit(function(e){
+                e.preventDefault();
+                window.location.replace("1/"+$('inputVal'));
+                }) 
+        }
+    </script>
+  </body>
+</html>
